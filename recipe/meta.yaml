@@ -1,5 +1,5 @@
 {% set name = "faster-coco-eval" %}
-{% set version = "1.6.7" %}
+{% set version = "1.6.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/faster_coco_eval-{{ version }}.tar.gz
-  sha256: 155a324431dff5ade373905740f7d58a73203d7c85c2cf970bbfe684013ce555
+  sha256: f58236bc347936a0fb152d50d03de3678414596d57cd53d68f814d17835da4b0
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
